@@ -1,1 +1,1 @@
-# Simple-Machine-Learning-Model-for-Nvidia-NVDA-Stock-Price-Prediction
+# Simple Stock Price Prediction ML Model for Nvidia (NVDA) [Feb 2025]
