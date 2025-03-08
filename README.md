@@ -53,3 +53,93 @@ The transformation process prioritizes:
 1. **Clone the repository**  
    ```bash
    git clone https://github.com/JordanConallLuthaisWright/Simple-Machine-Learning-Model-for-Nvidia-NVDA-Stock-Price-Prediction.git
+2. **Navigate to the project directory**
+   ```bash
+   cd Simple Machine Learning Model for Nvidia (NVDA) Stock Price Prediction
+3. **Install dependencies**
+   ```bash
+   pip install pandas numpy matplotlib seaborn scikit-learn
+4. **Launch Jupyter Notebook**
+   ```bash
+   jupyter notebook
+5. Open and execute the cells, "Simple Machine Learning Model for Nvidia (NVDA) Stock Price Prediction.ipynb"
+
+---
+
+## **Business Context & Problem Statement**  
+Nvidia’s stock price has **shown strong growth trends**, but also **high volatility**, making it difficult to predict short-term movements. This project explores whether **machine learning models** can capture **price trends and momentum indicators** to improve forecasting.
+
+### **Key Challenges:**  
+- **Financial markets are highly unpredictable.**  
+- **Machine learning models need meaningful historical features** to make informed predictions.  
+- **Backtesting is essential** to ensure the model performs reliably over unseen data.  
+
+---
+
+## **Methodology & Technical Steps**  
+
+### **1. Data Preprocessing & Cleaning**  
+- **Extracted historical stock prices** from Yahoo Finance.  
+- **Created rolling averages** to capture long-term trends.  
+
+### **2. Feature Engineering**  
+- **Moving Averages** (2, 5, 60, 250, 1000-day periods).  
+- **Trend Indicators**: Count of previous **up-days to measure momentum**.  
+- **Binary Target Creation**: `1` if the price increases, `0` otherwise.  
+
+### **3. Model Training & Evaluation**  
+- **Random Forest Classifier** as the **baseline model**.  
+- **Tuned hyperparameters** for better performance.  
+- **Evaluated with precision scores and classification metrics**.  
+
+### **4. Backtesting Approach**  
+- **Tested model over multiple historical periods**.  
+- **Evaluated whether predictions aligned with actual stock movements**.  
+
+---
+
+## **Key Takeaways & Impact**  
+- **Stock price prediction is complex**, but **feature engineering improves model accuracy**.  
+- **Early model performance achieved ~51.7% precision** (near random).  
+- **Feature Engineering boosted precision to 56.7%**, highlighting the importance of **trend signals**.  
+- **Backtesting provided real-world validation** of model effectiveness.  
+
+---
+
+## **Future Enhancements**  
+
+### **1. Deep Learning Models**  
+- Implement **LSTMs or GRUs** for better **time-series forecasting**.  
+
+### **2. Incorporate Macroeconomic Factors**  
+- Include **earnings reports, Federal Reserve decisions, and global economic data**.  
+
+### **3. Test Alternative Machine Learning Models**  
+- Compare **XGBoost, SVM, and Logistic Regression** to assess model performance.  
+
+### **4. Live Data Testing**  
+- Apply predictions on **real-time stock data** for validation.  
+
+---
+
+## **Business Impact & Insights**  
+This project demonstrates **how AI can assist in financial decision-making**. By refining prediction models, traders and investors can:  
+
+**Enhance algorithmic trading strategies.**  
+**Identify trends more effectively.**  
+**Test machine learning models on real market data.**  
+
+Although **stock prices are influenced by numerous external factors**, this project shows that **historical price trends and feature engineering can provide valuable insights into price direction**.  
+
+---
+
+## **Contact & Contributions**  
+Feel free to explore and contribute! If you have any suggestions, reach out or submit a pull request.  
+
+- **Email**: [jordan.c.l.wright@gmail.com](mailto:jordan.c.l.wright@gmail.com)  
+
+---
+
+### **Author:** Jordan  
+[GitHub Profile](https://github.com/JordanConallLuthaisWright)  
+
